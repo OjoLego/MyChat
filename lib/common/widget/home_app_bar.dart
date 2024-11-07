@@ -18,10 +18,14 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
             width: 32,
             height: 32,
             decoration: BoxDecoration(
-              shape: BoxShape.circle,
+              borderRadius: BorderRadius.circular(10),
               color: Colors.blue,
             ),
-            child: Icon(Icons.circle, color: Colors.white, size: 24),
+            child: Image.asset(
+              'assets/icons/logo_home.png',
+              width: 24,
+              height: 24,
+            ),
           ),
           SizedBox(width: 8),
           Text(
@@ -36,16 +40,20 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
       ),
       actions: [
         IconButton(
-          icon: Icon(
-            Icons.search,
-            color: Colors.blue,
+          icon: Image.asset(
+            'assets/icons/search_app_bar.png',
+            width: 24,
+            height: 24,
+            color: AppColors.primaryColor,
           ),
           onPressed: () {},
         ),
         IconButton(
-          icon: Icon(
-            Icons.notifications_none,
-            color: Colors.blue,
+          icon: Image.asset(
+            'assets/icons/bell_notification.png',
+            width: 24,
+            height: 24,
+            color: AppColors.primaryColor,
           ),
           onPressed: () {},
         ),

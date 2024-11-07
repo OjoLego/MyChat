@@ -26,4 +26,12 @@ flutter:
 
   assets:
     - assets/images/trendy_img1.png
+    - assets/icons/search_nav.png
+    - assets/icons/video_nav.png
+    - assets/icons/chat_nav.png
+    - assets/icons/user_nav.png
+    - assets/icons/search_app_bar.png
+    - assets/icons/bell_notification.png
+    - assets/icons/logo_home.png
+    - assets/icons/home_nav.png
 

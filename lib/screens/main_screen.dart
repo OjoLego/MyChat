@@ -43,15 +43,47 @@ class _MainScreenState extends State<MainScreen> {
           ),
           currentIndex: _currentIndex,
           onTap: onTap,
-          items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-            BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Feed'),
+          items: [
             BottomNavigationBarItem(
-                icon: Icon(Icons.videocam_outlined), label: 'Live'),
+                icon: Image.asset(
+                  'assets/icons/home_nav.png',
+                  color: _currentIndex == 0
+                      ? AppColors.primaryColor
+                      : AppColors.greyColor,
+                ),
+                label: 'Home'),
             BottomNavigationBarItem(
-                icon: Icon(Icons.chat_bubble_outline), label: 'Inbox'),
+                icon: Image.asset(
+                  'assets/icons/search_nav.png',
+                  color: _currentIndex == 1
+                      ? AppColors.primaryColor
+                      : AppColors.greyColor,
+                ),
+                label: 'Feed'),
             BottomNavigationBarItem(
-                icon: Icon(Icons.person_2_outlined), label: 'My Page'),
+                icon: Image.asset(
+                  'assets/icons/video_nav.png',
+                  color: _currentIndex == 2
+                      ? AppColors.primaryColor
+                      : AppColors.greyColor,
+                ),
+                label: 'Live'),
+            BottomNavigationBarItem(
+                icon: Image.asset(
+                  'assets/icons/chat_nav.png',
+                  color: _currentIndex == 3
+                      ? AppColors.primaryColor
+                      : AppColors.greyColor,
+                ),
+                label: 'Inbox'),
+            BottomNavigationBarItem(
+                icon: Image.asset(
+                  'assets/icons/user_nav.png',
+                  color: _currentIndex == 4
+                      ? AppColors.primaryColor
+                      : AppColors.greyColor,
+                ),
+                label: 'My Page'),
           ],
         ),
       ),
