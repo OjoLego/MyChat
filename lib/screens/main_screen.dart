@@ -6,7 +6,7 @@ import 'package:my_chat/screens/inbox_screen.dart';
 import 'package:my_chat/screens/live_screen.dart';
 import 'package:my_chat/screens/my_page_screen.dart';
 
-import 'home_screen.dart';
+import 'home/home_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);

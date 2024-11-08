@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_chat/common/res/colors.dart';
+import 'package:my_chat/screens/home/search_screen.dart';
 
 class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   const HomeAppBar({
@@ -46,7 +47,12 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
             height: 24,
             color: AppColors.primaryColor,
           ),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const SearchScreen()),
+            );
+          },
         ),
         IconButton(
           icon: Image.asset(

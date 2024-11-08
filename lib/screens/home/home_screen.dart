@@ -3,7 +3,7 @@ import 'package:my_chat/common/res/colors.dart';
 import 'package:my_chat/common/widget/home_live_card.dart';
 import 'package:my_chat/common/widget/home_trendy_card.dart';
 
-import '../common/widget/home_app_bar.dart';
+import '../../common/widget/home_app_bar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
